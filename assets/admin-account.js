@@ -3,7 +3,7 @@
     const byId = id => document.getElementById(id);
     const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
     const recoveryMessage = "Nếu email này có tài khoản, bạn sẽ nhận được liên kết đặt lại mật khẩu. Hãy kiểm tra hộp thư và thư rác.";
-    const recoveryUrl = () => location.protocol === "file:" ? "https://thanhchi113.github.io/reset-password.html" : new URL("reset-password.html", location.href).href;
+    const recoveryUrl = () => location.protocol === "file:" ? "https://thanhchi113.github.io/Chi-GV-Toan/reset-password.html" : new URL("reset-password.html", location.href).href;
     const passwordControls = new WeakMap();
     const passwordForms = new WeakSet();
     const passwordLabels = {
